@@ -1,0 +1,4 @@
+﻿  hello_world1.cpp
+C:\Users\andre\Desktop\C++\Solution1\hello_world1\hello_world1.cpp(9,9): warning C4101: 'num2': unreferenced local variable
+C:\Users\andre\Desktop\C++\Solution1\hello_world1\hello_world1.cpp(8,9): warning C4101: 'num': unreferenced local variable
+  hello_world1.vcxproj -> C:\Users\andre\Desktop\C++\Solution1\hello_world1\Debug\hello_world1.exe
