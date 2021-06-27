@@ -3,63 +3,87 @@
 
 
 #include <iostream>             // header       <>: c++ defined       "": user defined
+#include <cmath>
+#include <cctype>
+#include <string>
 using namespace std;
+
 
 void main()             // functionName: verb + noun      // entrance              returnType functionName(inputParameter)
 {
-    short num = 3;             
-    int num2;                 
+    string str = "hello";
+    string str2 = " there";
+    //cout << str.length() ;
+    //cout << str.at(2);   // str[2]
+    /*str[0] = 'H';
+    cout << str;*/
+    //cout << str + to_string(123);       // boolean
+    //cout << str.substr(2, 3);   // ->llo
+    cout << (int) str.find("z", 0);  
 
     /*
-    print hello world
+    * 10 mins -> 11:21
+    1. input an valid email address: yi.wang@company.extension      gmail|com     xxxx|qc.ca
+    2. extract the account, the company, and the extension
+    3. output the result
+              account: yi.wang
+              company: gmail
+              extension: com
     */
-    cout << "Hello World!\n";              // comment: ctrl + k, ctrl + c       uncomment: ctrl + k, ctrl + u
-    cout << "hi! " << "My name is " << "Wang" << " " << "Yi" << "\n"; // `\n` eascape sequence  转义符   `\t` `\"` `\'` `\\`
 
-    /*
-    input and output
-    */
-    cout << "Please enter a number: ";            
-    cin >> num2;                    // stores value into a variable
-    
-    cout << "The input number is " << num2;
-    
-    /*
-    data type auto casting
-    */
-    cout << 1 + 2 << '\n';              // 1 -> int,  3.14 -> double                // int + int = int
-    cout << 3.14 + 3.2 << '\n';         // double + double = double
-    cout << 1 + 3.14 << '\n';           // int + double = double            // C++ 无法直接进行不同数据类型的数据的运算
-                                                                            // C++ 会自动进行数据类型转换 int ->double
-                                                                            // 1.0 + 3.14 = 4.14
 
-    cout << 10 / 3 << '\n';                     // int / int = int: discard
-    cout << 10.0 / 3;
-    cout << 10 % 3;                     // mod
     
-    /*
-    1. Ask the user to enter its fname, lname
-    2. Print a welcome message to the user: Welcome Yi Wang
-    3. Ask the user to enter its birth year      1954
-    4. Calculate the century of the user's birth year   1954 -> 19 -> 20
-    5. Calculate the decade of the user's birth year    1954 -> 54 -> 5 -> 50
-    6. Print the result: You were born in the 50 decade of 20 century
-    */
-    string fname;
-    string lname;
-    int birthYear;
-    int century;
-    int decade;
 
-    cout << "Please enter you name: ";
-    cin >> fname >> lname;
-    cout << "Please enter your birthyear: ";
-    cin >> birthYear;
+    ///*
+    //print hello world
+    //*/
+    //cout << "Hello World!\n";              // comment: ctrl + k, ctrl + c       uncomment: ctrl + k, ctrl + u
+    //cout << "hi! " << "My name is " << "Wang" << " " << "Yi" << "\n"; // `\n` eascape sequence  转义符   `\t` `\"` `\'` `\\`
 
-    century = birthYear / 100 + 1;
-    decade = birthYear % 100 / 10;
-    
-    cout << "You were born in " << decade << "0 decade" << "in " << century << "century";
+    ///*
+    //input and output
+    //*/
+    //cout << "Please enter a number: ";            
+    //cin >> num2;                    // stores value into a variable
+    //
+    //cout << "The input number is " << num2;
+    //
+    ///*
+    //data type auto casting
+    //*/
+    //cout << 1 + 2 << '\n';              // 1 -> int,  3.14 -> double                // int + int = int
+    //cout << 3.14 + 3.2 << '\n';         // double + double = double
+    //cout << 1 + 3.14 << '\n';           // int + double = double            // C++ 无法直接进行不同数据类型的数据的运算
+    //                                                                        // C++ 会自动进行数据类型转换 int ->double
+    //                                                                        // 1.0 + 3.14 = 4.14
+
+    //cout << 10 / 3 << '\n';                     // int / int = int: discard
+    //cout << 10.0 / 3;
+    //cout << 10 % 3;                     // mod
+    //
+    ///*
+    //1. Ask the user to enter its fname, lname
+    //2. Print a welcome message to the user: Welcome Yi Wang
+    //3. Ask the user to enter its birth year      1954
+    //4. Calculate the century of the user's birth year   1954 -> 19 -> 20
+    //5. Calculate the decade of the user's birth year    1954 -> 54 -> 5 -> 50
+    //6. Print the result: You were born in the 50 decade of 20 century
+    //*/
+    //string fname;
+    //string lname;
+    //int birthYear;
+    //int century;
+    //int decade;
+
+    //cout << "Please enter you name: ";
+    //cin >> fname >> lname;
+    //cout << "Please enter your birthyear: ";
+    //cin >> birthYear;
+
+    //century = birthYear / 100 + 1;
+    //decade = birthYear % 100 / 10;
+    //
+    //cout << "You were born in " << decade << "0 decade" << "in " << century << "century";
 }
 
 

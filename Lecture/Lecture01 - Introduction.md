@@ -41,14 +41,34 @@
 5. **loading**: load the program into memory
 6. **executing**: executing the code
 
-## 1.3 Tools
+
+
+## 1.4Tools
 
 1. **Integrated development environment (IDE)**: a software that contains multi-tools for programmers to develop, e.g.: Visual Studio (2019, Community). An IDE contains complier, debugger and other automatic tools to accelerate the programming speed. 
    * Pro: powerful and integrated
    * Con: Huge and heavy
-2. Editor: a software that supports text editor. Programmers need to install additional tools such as compiler to execute the code. E.g.: Visual Studio Code, Sublime, Atom.
+2. **Editor**: a software that supports text editor. Programmers need to install additional tools such as compiler to execute the code. E.g.: Visual Studio Code, Sublime, Atom.
    *  Pro: Small and light
    * Con: Need to additional tools
 
 
+
+
+
+TDD test-driven development
+
+int m(int p1)
+
+
+
+3 -> 9
+
+5 -> 27
+
+-3  -> 99 x    0
+
+0 -> 
+
+9999999 -> 
 
